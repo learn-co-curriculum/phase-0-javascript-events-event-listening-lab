@@ -75,6 +75,13 @@ action can trigger multiple events!
 
 ## Explain the Difference Between Bubbling and Capturing Events
 
+In JavaScript, all click events "bubble up" the DOM. The `document` object knows
+about every event that is triggered on a page.  When one element is nested inside
+a second element, and both elements have registered a listener for the same event
+(a "click", for example). In most cases, it's not the desired behavior. Imagine if
+you had a large series of nested elements all with click events. Firing the click
+event of the innermost child would trigger the click events of every single parent.
+
 DOM events propagate by bubbling (starting at the target node and moving up the
 DOM tree to the root) and capturing (starting from the target node's parent
 elements and propagating down the tree until it reaches the target) — by
