@@ -20,10 +20,10 @@ onfocus //when a user puts the cursor in a form field
 onblur //When a user leaves a form field
 ```
 
-However, a common way to integrate the event listeners is by identifying the
-element and adding an event listener as a method. 
+To integrate the event listeners, we can identify the element and add an event
+listener as a method.
 
-## Demonstrate Triggering Event Listeners on DOM Nodes with `addEventListener()`
+### Demonstrate Triggering Event Listeners on DOM Nodes with `addEventListener()`
 
 Adding an event listener to a DOM node doesn't require much logic — we just
 call `addEventListener()` on the node. `addEventListener()` takes two arguments:
@@ -41,10 +41,10 @@ main.addEventListener('click', function(event) {
 });
 ```
 
-## Demonstrate Preventing the Default Behavior for DOM Nodes with `preventDefault()`
+### Demonstrate Preventing the Default Behavior for DOM Nodes with `preventDefault()`
 
-Let's test out preventing the
-default behavior of the input by keeping it from receiving the "g" character.
+Let's test out preventing the default behavior of the input by keeping it from
+receiving the "g" character.
 
 (this is going to get put into a file)
 ```js
@@ -60,7 +60,7 @@ input.addEventListener('keydown', function(e) {
 });
 ```
 
-Now try to type "g" in the input--not working, right?
+Now try to type "g" in the input — not working, right?
 
 Every DOM `event` comes with a `preventDefault` property. `preventDefault` is a
 function that, when called, will prevent the, well, default event from taking
@@ -73,14 +73,15 @@ the event's normal behavior. In this case, it stops the event from triggering
 other nodes in the DOM that might be listening for the same event. Yes, one
 action can trigger multiple events!
 
-## Explain the Difference Between Bubbling and Capturing Events
+### Explain the Difference Between Bubbling and Capturing Events
 
 In JavaScript, all click events "bubble up" the DOM. The `document` object knows
-about every event that is triggered on a page.  When one element is nested inside
-a second element, and both elements have registered a listener for the same event
-(a "click", for example). In most cases, it's not the desired behavior. Imagine if
-you had a large series of nested elements all with click events. Firing the click
-event of the innermost child would trigger the click events of every single parent.
+about every event that is triggered on a page. When one element is nested inside
+a second element, and both elements have registered a listener for the same
+event (a "click", for example). In most cases, that's not the desired behavior.
+Imagine if you had a large series of nested elements all with click events.
+Firing the click event of the innermost child would trigger the click events of
+every single parent.
 
 DOM events propagate by bubbling (starting at the target node and moving up the
 DOM tree to the root) and capturing (starting from the target node's parent
@@ -120,14 +121,14 @@ Now click on the `div` containing "5". You should see
 
 In the console, you can see the event starts at `div` 5, and then it bubbles up
 to the topmost node. Along the way, it triggers any other nodes that are
-listening for the event -- in this case, `'click'`.
+listening for the event — in this case, `'click'`.
 
-Try clicking on a node that's not so deeply nested -- you should still see the
+Try clicking on a node that's not so deeply nested — you should still see the
 event bubble up, starting at the node that you clicked and hitting every node up
 the tree until it reaches the top.
 
-What about capturing? In order to capture, we need to set the third argument to `addEventListener` to
-`true`. Let's try it out.
+What about capturing? In order to capture, we need to set the third argument to
+`addEventListener` to `true`. Let's try it out.
 
 (this is going to get put into a file)
 ```js
@@ -143,7 +144,7 @@ for (let i = 0; i < divs.length; i++) {
 }
 ```
 
-Now click on `div` 5. You should see
+Now click on `div` 5. You should see:
 
 ```js
 1 captured
@@ -165,13 +166,13 @@ Notice that the target node is the _last node to capture the event_, whereas
 it's the _first node to bubble the event up_. This is the most important
 takeaway.
 
-**NOTE**: Don't worry if bubbling and capturing seems a bit esoteric. The
+**NOTE**: Don't worry if bubbling and capturing seems strange. The
 different event behaviors are the results of the browser wars of the 90s, but
 most of the time it's safe just to stick to the default (which, for the record,
 is bubbling). You can read more about bubbling and capture on
 [StackOverflow][stackoverflow] and [QuirksMode][quirks]
 
-## Demonstrate Stopping Propagated Behaviors with `stopPropagation()`
+### Demonstrate Stopping Propagated Behaviors with `stopPropagation()`
 
 Now that we've explained a bit about the dangers and behavior of bubbling and
 capturing, you can see how events propagate through the DOM. Much of the time,
