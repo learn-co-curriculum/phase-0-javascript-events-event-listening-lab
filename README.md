@@ -46,7 +46,6 @@ main.addEventListener('click', function(event) {
 Let's test out preventing the default behavior of the input by keeping it from
 receiving the "g" character.
 
-(this is going to get put into a file)
 ```js
 const input = document.querySelector('input');
 
@@ -89,7 +88,6 @@ elements and propagating down the tree until it reaches the target) — by
 default, events nowadays all bubble. We can verify this behavior by attaching
 listeners to those nested `div`s in `index.html`.
 
-(this is going to get put into a file)
 ```js
 let divs = document.querySelectorAll('div');
 
@@ -130,7 +128,6 @@ the tree until it reaches the top.
 What about capturing? In order to capture, we need to set the third argument to
 `addEventListener` to `true`. Let's try it out.
 
-(this is going to get put into a file)
 ```js
 divs = document.querySelectorAll('div');
 
@@ -184,8 +181,6 @@ comes in.
 
 Let's rewrite the bubbling example to stop propagation so that only one event is
 triggered:
-
-(this is going to get put into a file)
 
 ```js
 const divs = document.querySelectorAll('div');
