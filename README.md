@@ -23,7 +23,7 @@ onblur //When a user leaves a form field
 To integrate the event listeners, we can identify the element and add an event
 listener as a method.
 
-### Demonstrate Triggering Event Listeners on DOM Nodes with `addEventListener()`
+## Demonstrate Triggering Event Listeners on DOM Nodes with `addEventListener()`
 
 Adding an event listener to a DOM node doesn't require much logic — we just
 call `addEventListener()` on the node. `addEventListener()` takes two arguments:
@@ -41,7 +41,7 @@ main.addEventListener('click', function(event) {
 });
 ```
 
-### Demonstrate Preventing the Default Behavior for DOM Nodes with `preventDefault()`
+## Demonstrate Preventing the Default Behavior for DOM Nodes with `preventDefault()`
 
 Let's test out preventing the default behavior of the input by keeping it from
 receiving the "g" character.
@@ -72,7 +72,7 @@ the event's normal behavior. In this case, it stops the event from triggering
 other nodes in the DOM that might be listening for the same event. Yes, one
 action can trigger multiple events!
 
-### Explain the Difference Between Bubbling and Capturing Events
+## Explain the Difference Between Bubbling and Capturing Events
 
 In JavaScript, all click events "bubble up" the DOM. The `document` object knows
 about every event that is triggered on a page. When one element is nested inside
@@ -169,7 +169,7 @@ most of the time it's safe just to stick to the default (which, for the record,
 is bubbling). You can read more about bubbling and capture on
 [StackOverflow][stackoverflow] and [QuirksMode][quirks]
 
-### Demonstrate Stopping Propagated Behaviors with `stopPropagation()`
+## Demonstrate Stopping Propagated Behaviors with `stopPropagation()`
 
 Now that we've explained a bit about the dangers and behavior of bubbling and
 capturing, you can see how events propagate through the DOM. Much of the time,
