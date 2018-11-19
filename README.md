@@ -21,12 +21,13 @@ It allows us to associate "hearing" an event with executing a callback.
 1. the name of the event
 2. a _callback function_ to "handle" the event
 
-Start by adding a listener for `click` event on the `main#main` element
-in `index.html`.  Take a look at `index.html` in the browser. When you
-click in the `main#main` area, nothing happens. Now let's set up
-some _event handling_.
+Take a look at `index.html` in the browser. When you click in the `<input>`
+area, nothing happens. Now let's set up some _event handling_.
 
-Enter the following into `index.js`:
+Start by adding an event listener for the `click` event on the `input#input`
+element in `index.html`.
+
+Try out the following in the Chrome DevTools console:
 
 ```js
 const main = document.getElementById('main');
@@ -36,7 +37,10 @@ main.addEventListener('click', function(event) {
 });
 ```
 
-When you click inside of `main#main`, **_now_**, you will get an alert box.
+When you click inside of `input#input`, **_now_**, you will get an alert box.
+
+Take this code and paste it into the `index.js` file's `addingEventListener`
+function.
 
 Let's review the parts of this code:
 
