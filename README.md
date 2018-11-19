@@ -59,13 +59,10 @@ and move to the next lesson!
 ## Resources
 
 - [MDN - Web Events](https://developer.mozilla.org/en-US/docs/Web/Events)
-- [StackOverflow - Bubbling and Capturing](http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing)
-- [QuirksMode - Event order](http://www.quirksmode.org/js/events_order.html)
+- [StackOverflow - Bubbling and Capturing][stackoverflow]
+- [QuirksMode - Event order][quirks]
 
-[events]: https://developer.mozilla.org/en-US/docs/Web/Events
-[instructions]: http://help.learn.co/workflow-tips/github/how-to-manually-open-a-lab
 [stackoverflow]: http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing
 [quirks]: http://www.quirksmode.org/js/events_order.html
-[help]: http://help.learn.co/the-learn-ide/common-ide-questions/viewing-html-pages-in-the-learn-ide
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/fewpjs-event-listening'>Interacting with the DOM via JavaScript Event Listeners</a> on Learn.co and start learning to code for free.</p>
