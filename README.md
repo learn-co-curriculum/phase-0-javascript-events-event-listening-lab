@@ -52,7 +52,9 @@ Let's review the parts of this code:
 
 ## Conclusion
 
-Edit `index.js` to rewrite your codealong JavaScript code.
+When you have pasted the solution into the `addingEventListener` function, your
+tests should pass when you run `learn`. This means you can run `learn submit`
+and move to the next lesson!
 
 ## Resources
 
