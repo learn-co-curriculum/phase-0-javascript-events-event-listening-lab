@@ -63,5 +63,3 @@ and move to the next lesson!
 
 [stackoverflow]: http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing
 [quirks]: http://www.quirksmode.org/js/events_order.html
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/fewpjs-event-listening'>Interacting with the DOM via JavaScript Event Listeners</a> on Learn.co and start learning to code for free.</p>
