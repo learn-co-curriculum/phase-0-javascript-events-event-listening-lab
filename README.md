@@ -7,12 +7,13 @@
 ## Introduction
 
 We know how to manipulate nodes in the DOM by using JavaScript. We also know
-that events can be _handled_ and can do work inside _callback functions_ when the
-event is triggered. JavaScript programmers often say we are "listening" for
+that events can be _handled_ and can do work inside _callback functions_ when
+the event is triggered. JavaScript programmers often say we are "listening" for
 an event in order to "execute" or "call" a _callback function_.
 
-In order to teach nodes (or, "elements") to "listen" for an event, we use `addEventListener()`.
-It allows us to associate "hearing" an event with executing a callback.
+In order to teach nodes (or, "elements") to "listen" for an event, we use
+`addEventListener()`. It allows us to associate "hearing" an event with
+executing a callback.
 
 ## Demonstrate Defining Event Listeners on DOM Nodes with `addEventListener()`
 
@@ -24,8 +25,8 @@ It allows us to associate "hearing" an event with executing a callback.
 Take a look at `index.html` in the browser. When you click in the `<input>`
 area, nothing happens. Now let's set up some _event handling_.
 
-Start by adding an event listener for the `click` event on the `input#input`
-element in `index.html`.
+We'll start by adding an event listener for the `click` event on the
+`input#input` element in `index.html`.
 
 Try out the following in the Chrome DevTools console:
 
@@ -54,6 +55,12 @@ Let's review the parts of this code:
 When you have pasted the solution into the `addingEventListener` function, your
 tests should pass when you run `learn`. This means you can run `learn submit`
 and move to the next lesson!
+
+**Note:** You've added the `addEventListener()` function inside the
+`addingEventListener()` function. If you want to test the code in the browser,
+recall that you will need to call the outer function in `index.js`. Executing
+`addingEventListener()` will activate the event listener. Be sure to refresh the
+page first to load the new code in `index.js`.
 
 ## Resources
 
