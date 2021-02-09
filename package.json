@@ -14,7 +14,7 @@
     "chai": "4.1.2",
     "file-system": "2.2.2",
     "jsdom": "9.2.1",
-    "mocha": "5.2.0",
+    "mocha": "6.2.3",
     "mocha-jsdom": "~1.1.0",
     "mocha-multi": "1.0.1",
     "sinon": "^7.2.7"
