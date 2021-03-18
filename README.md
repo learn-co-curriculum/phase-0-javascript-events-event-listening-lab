@@ -112,7 +112,8 @@ rather than `clickAlert` and see what happens.
 Now let's set up `index.js` to do the same thing so we can get our test passing.
 To do that, simply copy the code into the `index.js` file's
 `addingEventListener()` function and run the test. Either version should pass
-the test &mdash; try them both and find out!
+the test — just make sure that the code creating the event listener is **inside**
+the `addingEventListener()` function.
 
 #### Checking the Code in the Browser
 
