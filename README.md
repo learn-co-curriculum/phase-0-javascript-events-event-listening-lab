@@ -74,11 +74,12 @@ is passed as the second argument when it detects the event, so it doesn't need
 to be named.
 
 If we are only calling our callback function in that one place, using an
-anonymous function makes sense. However, what if we wanted to use that same
-alert message on the `<div>` containing the number `5`? In that case, it would
-make more sense to create a separate, named function that could be called by
-both event listeners. With this approach, we would pass the _function name_ as
-the second argument to `addEventListener()` rather than the function itself:
+anonymous function makes sense. However, what if (for example) we also wanted
+to use that alert message on the `<div>` containing the number `5`? Or maybe on
+a bunch of elements? Creating a separate, named function would enable us to
+reuse that code as many times as we like simply by calling the function. With
+this approach, we would pass the _function name_ as the second argument to
+`addEventListener()` rather than the function itself:
 
 ```js
 const input = document.getElementById('input');
