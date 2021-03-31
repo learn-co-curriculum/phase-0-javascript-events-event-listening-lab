@@ -114,7 +114,8 @@ rather than `clickAlert` and see what happens.
 Now let's set up `index.js` to do the same thing so we can get our test passing.
 To do that, simply copy the code into the `index.js` file's
 `addingEventListener()` function and run the test. Either version should pass
-the test &mdash; try them both and find out!
+the test — just make sure that the code creating the event listener is **inside**
+the `addingEventListener()` function.
 
 #### Checking the Code in the Browser
 
@@ -124,6 +125,22 @@ also check our changes to `index.js` in the browser. Because you've added the
 recall that you will need to call the outer function in `index.js` to execute
 `addEventListener()` and activate the event listener. Be sure to refresh the
 page to load the new code in `index.js`.
+
+## Saving Your Work Remotely
+
+Currently, the work you've done on this assignmnent is only on your local
+machine. To preserve your solution on your GitHub fork, you will need to stage the
+changes you've made, commit them, and push the commit up to GitHub. Use
+the following commands to do this:
+
+```sh
+git add .
+git commit -m "Completed assignment"
+git push
+```
+
+If you visit your fork on GitHub, you should now see that _you've_ made the most
+recent commit, and your code will be present in the files.
 
 ## Resources
 
