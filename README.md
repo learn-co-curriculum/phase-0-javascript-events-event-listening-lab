@@ -75,10 +75,10 @@ to be named.
 
 If we are only calling our callback function in that one place, using an
 anonymous function makes sense. However, what if we wanted to use that same
-alert message on the `<div>` containing the number `5`? In that case, it would
-make more sense to create a separate, named function that could be called by
-both event listeners. With this approach, we would pass the _function name_ as
-the second argument to `addEventListener()` rather than the function itself:
+alert message on a bunch of elements? In that case, it would make more sense to
+create a separate, named function that could be called by all of our event
+listeners. With this approach, we would pass the _function name_ as the second
+argument to `addEventListener()` rather than the function itself:
 
 ```js
 const input = document.getElementById('input');
@@ -90,13 +90,15 @@ function clickAlert() {
 input.addEventListener('click', clickAlert);
 ```
 
-To hook up our other div, we would use our CSS selector skills to grab the
-element and save it to a variable, then add an event listener to that element.
-Give it a try!
+We could then hook up as many elements as we'd like to our `clickAlert`. Just as
+we did for the `input` element, we would first use our CSS selector skills to
+grab the desired element and save it to a variable, then add the `click` event
+listener to that element. Give it a try!
 
-With this approach, if we decide later that we want to change the text of the
-alert to "Hee hee, that tickles!" instead, we would only need to make that
-change in one place.
+With this approach, even if we're using our `clickAlert` with a whole bunch of
+elements, if we decide later that we want to change the text of the alert to
+"Hee hee, that tickles!" instead, we would only need to make that change in one
+place: inside our `clickAlert()` function.
 
 **Note**: we pass `clickAlert` as the argument, not `clickAlert()`. This is
 because we don't want to _invoke_ the function in this line of code. Instead, we
