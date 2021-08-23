@@ -133,10 +133,10 @@ machine. To preserve your solution on your GitHub fork, you will need to stage t
 changes you've made, commit them, and push the commit up to GitHub. Use
 the following commands to do this:
 
-```sh
-git add .
-git commit -m "Completed assignment"
-git push
+```console
+$ git add .
+$ git commit -m "Completed assignment"
+$ git push
 ```
 
 If you visit your fork on GitHub, you should now see that _you've_ made the most
