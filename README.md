@@ -51,7 +51,9 @@ be executed when the event is "heard."
 
 [According to MDN][callback]:
 
-> A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+> A callback function is a function passed into another function as an argument,
+> which is then invoked inside the outer function to complete some kind of
+> routine or action.
 
 That's exactly what's happening here: we're passing a callback function as the
 second argument to the `addEventListener()` function; the callback will be
@@ -117,7 +119,7 @@ To do that, simply copy the code into the `index.js` file's
 the test — just make sure that the code creating the event listener is **inside**
 the `addingEventListener()` function.
 
-#### Checking the Code in the Browser
+### Checking the Code in the Browser
 
 We know that the code works in the console and passes the test, but we should
 also check our changes to `index.js` in the browser. Because you've added the
