@@ -11,8 +11,7 @@ In this lab we will learn how to teach nodes to "listen" for an event using
 
 If you haven't already, fork and clone this lab into your local environment.
 Navigate into its directory in the terminal, then run `code .` to open the files
-in Visual Studio Code. Finally, run `npm install` to install the lab's
-dependencies.
+in Visual Studio Code.
 
 ## Create Event Listeners on DOM Nodes with `addEventListener()`
 
@@ -51,7 +50,9 @@ be executed when the event is "heard."
 
 [According to MDN][callback]:
 
-> A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+> A callback function is a function passed into another function as an argument,
+> which is then invoked inside the outer function to complete some kind of
+> routine or action.
 
 That's exactly what's happening here: we're passing a callback function as the
 second argument to the `addEventListener()` function; the callback will be
@@ -117,7 +118,7 @@ To do that, simply copy the code into the `index.js` file's
 the test — just make sure that the code creating the event listener is **inside**
 the `addingEventListener()` function.
 
-#### Checking the Code in the Browser
+### Checking the Code in the Browser
 
 We know that the code works in the console and passes the test, but we should
 also check our changes to `index.js` in the browser. Because you've added the
@@ -125,22 +126,6 @@ also check our changes to `index.js` in the browser. Because you've added the
 recall that you will need to call the outer function in `index.js` to execute
 `addEventListener()` and activate the event listener. Be sure to refresh the
 page to load the new code in `index.js`.
-
-## Saving Your Work Remotely
-
-Currently, the work you've done on this assignment is only on your local
-machine. To preserve your solution on your GitHub fork, you will need to stage the
-changes you've made, commit them, and push the commit up to GitHub. Use
-the following commands to do this:
-
-```console
-$ git add .
-$ git commit -m "Completed assignment"
-$ git push
-```
-
-If you visit your fork on GitHub, you should now see that _you've_ made the most
-recent commit, and your code will be present in the files.
 
 ## Resources
 
