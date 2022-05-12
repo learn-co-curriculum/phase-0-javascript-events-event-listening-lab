@@ -91,7 +91,7 @@ function clickAlert() {
 input.addEventListener('click', clickAlert);
 ```
 
-We could then hook up as many elements as we'd like to our `clickAlert`. Just as
+We could then attach our `clickAlert` to as many elements as we'd like. Just as
 we did for the `input` element, we would first use our CSS selector skills to
 grab the desired element and save it to a variable, then add the `click` event
 listener to that element. Give it a try!
