@@ -24,19 +24,19 @@ element we want to add the listener to, and passing it two arguments:
 
 Open up `index.html` in the browser. When you click in the `<input>` area,
 nothing happens. Let's set up some _event handling_. Specifically, let's add an
-event listener for the `click` event on the `input#input` element in
+event listener for the `click` event on the `input#button` element in
 `index.html`.
 
 Try out the following in the Chrome DevTools console:
 
 ```js
-const input = document.getElementById('input');
+const input = document.getElementById('button');
 input.addEventListener('click', function() {
   alert('I was clicked!');
 });
 ```
 
-Now when you click inside of `input#input`, you will get an alert box.
+Now when you click inside of `input#button`, you will get an alert box.
 
 Let's review what's happening in this code.
 
@@ -82,7 +82,7 @@ listeners. With this approach, we would pass the _function name_ as the second
 argument to `addEventListener()` rather than the function itself:
 
 ```js
-const input = document.getElementById('input');
+const input = document.getElementById('button');
 
 function clickAlert() {
   alert('I was clicked!');
